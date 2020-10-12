@@ -46,7 +46,7 @@ html, body {
 }
 
 /* Smartphones (portrait) ----------- */
-/* For screen size less that 500px*/
+/* For screen size less that 500px */
 @media (max-width: 500px) {
   .tooltip-item {
     width: 10px;
