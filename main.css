@@ -1,6 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Gochi+Hand);
+.content {
+  display: flex;
+  position: relative;
+  float: center;
+  /*margin: 50%;*/
+  
+}
+
+
 .poop {
-  background-image: url(./image/main.jpg);
+    background-image: url(image/suits.png);
 }
 
 .tooltip {
@@ -67,6 +76,15 @@
   left: 10%;
 }
 
+.tooltip:nth-child(3) {
+  top: 40%;
+  left: 50%;
+}
+
+.tooltip:nth-child(4) {
+  top: 70%;
+  left: 70%;
+}
 .tooltip:nth-child(3) {
   top: 40%;
   left: 50%;
