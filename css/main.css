@@ -46,6 +46,7 @@ html, body {
 }
 
 /* Smartphones (portrait) ----------- */
+/* For screen size less that 500px*/
 @media (max-width: 500px) {
   .tooltip-item {
     width: 10px;
@@ -53,7 +54,6 @@ html, body {
     margin: -5px 0 0 -5px;
   }
 }
-
 
 /* creates/defines custom animation */
 
