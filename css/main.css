@@ -2,6 +2,7 @@
     --main-white-text-color: #e8e8e8;
     --main-bg-black: #272727;
     --main-color-4: #7986A1;
+    --color-red:#e60000;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Gochi+Hand);
@@ -297,6 +298,9 @@ html, body {
 
 .bg-gray {
     background-color: var(--main-color-4);
+}
+.text-red{
+  color: var(--color-red); 
 }
 
 .main-section {
