@@ -1,6 +1,7 @@
 :root{
     --main-white-text-color: #e8e8e8;
     --main-bg-black: #272727;
+    --main-color-4: #7986A1;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Gochi+Hand);
@@ -97,16 +98,16 @@ html, body {
 /* For screen size less that 480,768,992 px */
 @media (max-width: 992px) {
   .tooltip-item {
-    width: 2%;
-    height: 2%;
+    width: 30%;
+    height: 30%;
     margin: -1% 0 0 -1%;
   }
 }
 
 @media (max-width: 768px) {
   .tooltip-item {
-    width: 2%;
-    height: 2%;
+    width: 15%;
+    height: 15%;
     margin: -1% 0 0 -1%;
   }
 }
@@ -292,4 +293,16 @@ html, body {
 }
 .text-style-bold {
     font-weight: bold;
+}
+
+.bg-gray {
+    background-color: var(--main-color-4);
+}
+
+.main-section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
