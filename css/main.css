@@ -1,3 +1,8 @@
+:root{
+    --main-white-text-color: #e8e8e8;
+    --main-bg-black: #272727;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Gochi+Hand);
 .content {
   display: flex;
@@ -46,12 +51,28 @@ html, body {
 }
 
 /* Smartphones (portrait) ----------- */
-/* For screen size less that 500px */
-@media (max-width: 500px) {
+/* For screen size less that 480,768,992 px */
+@media (max-width: 992px) {
   .tooltip-item {
-    width: 10px;
-    height: 10px;
-    margin: -5px 0 0 -5px;
+    width: 2%;
+    height: 2%;
+    margin: -1% 0 0 -1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tooltip-item {
+    width: 2%;
+    height: 2%;
+    margin: -1% 0 0 -1%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tooltip-item {
+    width: 2%;
+    height: 2%;
+    margin: -1% 0 0 -1%;
   }
 }
 
@@ -85,32 +106,40 @@ html, body {
 /* positioning the different circles */
 
 .tooltip:first-child {
-  top: 20%;
-  left: 20%;
-}
-
-.tooltip:nth-child(2) {
-  top: 50%;
-  left: 10%;
-}
-
-.tooltip:nth-child(3) {
   top: 40%;
-  left: 50%;
-}
-
-.tooltip:nth-child(4) {
-  top: 70%;
   left: 70%;
 }
-.tooltip:nth-child(5) {
+
+.tooltip:nth-child(2) { /*Donna*/
   top: 40%;
-  left: 50%;
+  left: 20.5%;
 }
 
-.tooltip:nth-child(6) {
-  top: 70%;
-  left: 70%;
+.tooltip:nth-child(3) { /*Louis*/
+  top: 39%;
+  left: 32.8%;
+}
+
+.tooltip:nth-child(4) { /*Harvey*/
+  top: 35%;
+  left: 43.8%;
+}
+.tooltip:nth-child(5) { /*Mike*/
+  top: 40%;
+  left: 54.6%;
+}
+
+.tooltip:nth-child(6) { /*Rachel*/
+  top: 40%;
+  left: 63%;
+}
+.tooltip:nth-child(7) { /*Jessica*/
+  top: 37%;
+  left: 79.5%;
+}
+.tooltip:nth-child(8) { /*Jessica*/
+  top: 8%;
+  left: 49.5%;
 }
 
 
@@ -144,7 +173,7 @@ html, body {
 /* transforming at different points/positions? */
 
 .tooltip-west .tooltip-content {
-  left: 4em;
+  left: 2em;
   -webkit-transform-origin: -2em 50%;
   transform-origin: -2em 50%;
   -webkit-transform: translate3d(0, 50%, 0) rotate3d(1, 1, 1, 30deg);
@@ -152,7 +181,7 @@ html, body {
 }
 
 .tooltip-east .tooltip-content {
-  right: 4em;
+  right: 2em;
   -webkit-transform-origin: calc(100% + 2em) 50%;
   transform-origin: calc(100% + 2em) 50%;
   -webkit-transform: translate3d(0, 50%, 0) rotate3d(1, 1, 1, -30deg);
@@ -207,4 +236,14 @@ html, body {
 .tooltip-east .tooltip-content::after {
   -webkit-transform: scale3d(-1, 1, 1);
   transform: scale3d(-1, 1, 1);
+}
+
+
+.footer{
+    background-color: var(--main-bg-black);
+    color: var(--main-white-text-color);
+}
+.cantered-horizontal {
+    display: flex;
+    justify-content: center;
 }
