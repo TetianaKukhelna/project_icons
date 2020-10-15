@@ -21,6 +21,27 @@ html, body {
   height: auto;
 }
 
+.main-section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-photo-block {
+    position: relative;
+    min-height: 100px;
+    min-width: 150px;
+    max-width: 400px;
+    max-height: 400px;
+}
+.main-photo-block > p {
+    line-height: 1;
+}
+
+
+
 /*.poop {
     background-image: url(../image/suits.png);
     background-position: center;
@@ -28,11 +49,12 @@ html, body {
     background-size: contain;
 }*/
 
-.poop_H{
-  background-image: url(../image/Harvey.png);
-  background-position: center;
+/*.poop_H{
+  background-image: url(../image/Har.png);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-bottom: :10px;
 }
 
 .poop_M{
@@ -47,6 +69,7 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin: 0 0 10px 0;
 }
 
 .poop_R{
@@ -57,18 +80,18 @@ html, body {
 }
 
 .poop_D{
-  background-image: url(../image/Donna.png);
+  background-image: url(../image/Don.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;  
-}
+}*/
 
-.poop_J{
+/*.poop_J{
   background-image: url(../image/Jessica.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;  
-}
+}*/
 
 .tooltip {
   position: absolute;
@@ -253,7 +276,7 @@ html, body {
 }
 
 .tooltip-content::before {
-  height: 100%;
+  height: 3em;
   width: 3em;
 }
 
@@ -303,10 +326,6 @@ html, body {
   color: var(--color-red); 
 }
 
-.main-section {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.size{
+  height: 100px;
 }
